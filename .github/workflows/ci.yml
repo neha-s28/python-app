@@ -1,0 +1,11 @@
+name: CI Test
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: self-hosted   # or "windows-latest"
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run script
+        run: echo "Hello from GitHub Actions GUI setup!"
